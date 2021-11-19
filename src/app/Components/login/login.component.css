@@ -1,0 +1,46 @@
+.container{
+    background: linear-gradient(45deg,rgb(253, 144, 204),rgb(107, 141, 128)) ;
+    width: 450px;
+    height: 60vh;
+    margin: 100px auto;
+    border: none;
+    box-shadow: 0 5px 10px black ;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    color:rgb(241, 243, 245);
+    
+}
+.container .content{
+    position:absolute;
+    top: 0;
+    left: 0;
+    color:white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+    background: linear-gradient(45deg,blueviolet,lightgreen);
+    width: 100% ;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    transform: translatex(0%);
+}
+.container:hover .content{
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.container .content i,p{
+   position: relative;
+   top: 100px;
+   left: 190px;
+}
+.container .normal-form i{
+    position: relative;
+   top: 0px;
+   left: 180px;
+}
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
