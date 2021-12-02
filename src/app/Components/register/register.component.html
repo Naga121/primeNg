@@ -1,0 +1,142 @@
+<div class="container-fluid col-lg-4 col-sm-12 shadow-lg">
+  <div class="row">
+    <i class="pi pi-user text-center mt-3" style="font-size: 4rem"></i>
+    <h1 class="text-center fs-1 fw-bold mt-3">Registration!</h1>
+  </div>
+  <div class="row">
+    <div class="col-lg-12 mt-3">
+      <form [formGroup]="regForm" (ngSubmit)="onSubmit()">
+        <input type="hidden" name="id">
+        <div class="row g-3 mx-3">
+          <div class="col-md-6">
+            <label for="Fname" class="form-label">
+              First Name<span class="text-danger">*</span></label
+            >
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Your FirstName"
+              formControlName="fName"
+            />
+            <div class="text-danger">
+              <span *ngIf="(f.fName.touched || submitted) && f.fName.errors?.required">Name is Required*</span>
+              <span *ngIf=" f.fName.errors?.minlength">Minimum 3 Letters Required*</span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="Lname" class="form-label"
+              >Lasrt Name <span class="text-danger">*</span></label
+            >
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Your LastName"
+              formControlName="lName"
+            />
+            <div class="text-danger">
+              <span *ngIf="(f.lName.touched || submitted) && f.lName.errors?.required">Name is Required*</span>
+              <span *ngIf=" f.lName.errors?.minlength">Minimum 3 Letters Required*</span>
+            </div>
+          </div>
+        </div>
+        <div class="row g-3 mx-3">
+          <div class="col-md-6">
+            <label for="Mobile" class="form-label"
+              >Mobile<span class="text-danger">*</span></label
+            >
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Your Mobile Numbers"
+              formControlName="mobile"
+            />
+            <div class="text-danger">
+              <span *ngIf="(f.mobile.touched || submitted) && f.mobile.errors?.required">Mobile number is Required*</span>
+              <span *ngIf="f.mobile.errors?.pattern">Mobile Number must have 10 digit*</span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="form-label"
+              >Email <span class="text-danger">*</span></label
+            >
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Your Email Address"
+              formControlName="email"
+            />
+            <div class="text-danger">
+              <span *ngIf="(f.email.touched || submitted) && f.email.errors?.required">Email is Required*</span>
+              <span *ngIf="f.email.touched && f.email.errors?.pattern">Enter a valid email address </span>
+              <!-- <span *ngIf="hideEmailValidate">This Email is Already Regiter please enter another Email*</span> -->
+            </div>
+          </div>
+        </div>
+        <div class="row g-3 mx-3">
+          <div class="col-md-6">
+            <label for="password" class="form-label"
+              >Password <span class="text-danger">*</span>
+            </label>
+            <input
+              [type]="inputType"
+              class="form-control"
+              placeholder="Your Password"
+              formControlName="pwd"
+            />
+            <div class="text-danger">
+              <span *ngIf="f.pwd.touched && f.pwd.errors?.pattern">
+                Password should have minimum 8 characters, and at least 1 uppercase letter,
+                1 lowercase letter, 1 number and 1 special symbols*
+              </span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="ConformPassword" class="form-label"
+              >ConformPassword<span class="text-danger">*</span></label
+            >
+            <div class="input-group">
+              <input
+                [type]="inputType"
+                class="form-control"
+                placeholder="Password"
+                formControlName="conPwd"
+              />
+              <span class="input-group-text">
+                <input type="checkbox" (change)="showPassword($event)" />
+              </span>
+            </div>
+            <div class="text-danger">
+              <span *ngIf="(f.conPwd.touched || submitted)&& f.conPwd.errors?.required">Confirm Password is required*</span>
+              <span *ngIf="f.conPwd.touched && f.conPwd.errors?.passwordMismatch">Passwords doesnot match* </span>
+            </div>
+          </div>
+        </div>
+        <div class="row row g-3 mt-3 mx-3">
+          <div class="form-group ">
+            <input type="checkbox" name="term" formControlName="term" />&nbsp;
+            <span class="term-condition">I accept to terms and conditions</span
+            ><br />
+            <span
+              class="text-danger"
+              *ngIf="(f.term.touched || submitted) && f.term.errors?.required"
+              >This Fiels is Required*</span
+            >
+          </div>
+        </div>
+        <div class="row g-3 mb-3 mx-3">
+          <div class="col">
+            <button type="submit" class="btn btn-danger" [disabled]="regForm.invalid">Submite</button>
+          </div>
+          <div class="col">
+            <h4 class="text-dark text-end">
+              You have Account &nbsp;
+              <a class="text-danger text-bold h6" routerLink="/login">
+                Login?</a
+              >
+            </h4>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

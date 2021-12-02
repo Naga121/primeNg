@@ -1,3 +1,50 @@
 .navbar{
-    background: linear-gradient(30deg,red,black);
+    background:#2e2c2c;
+}
+
+
+
+.sidenav-container{
+  height: 100%;
+}
+.sidenav{
+  width: auto;
+  padding: 10px;
+  background-color:#3f51b5;
+  text-align: center;
+  border: none;
+}
+mat-toolbar{
+  color: rgb(248, 248, 248);
+  background-color:#3f51b5 ;
+}
+mat-icon #face{
+ font-size: 25px;
+
+}
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  font-size: 25px;
+}
+.mat-toolbar a{
+
+  display: inline-block;
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+
+}
+mat-nav-list a{
+  top: 30px;
+  margin: auto;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+}
+
+.spacer {
+  flex: 1 1 auto ;
 }

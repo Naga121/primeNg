@@ -1,0 +1,92 @@
+{
+  "employee": [
+    {
+      "name": "Naga",
+      "email": "naga@gmail.com",
+      "mobile": "9874563210",
+      "id": 1
+    },
+    {
+      "name": "naga",
+      "mobile": "4536",
+      "email": "tashgdrg",
+      "id": 2
+    },
+    {
+      "name": "thota",
+      "mobile": "95691514",
+      "email": "raju@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "naga",
+      "mobile": "123456789",
+      "email": "naga@gmail.com",
+      "id": 4
+    },
+    {
+      "name": "naga",
+      "mobile": "95691514",
+      "email": "raju@gmail.com",
+      "id": 5
+    },
+    {
+      "name": "naga",
+      "mobile": "4536",
+      "email": "tashgdrg",
+      "id": 6
+    },
+    {
+      "name": "naga",
+      "mobile": "rrrrrr",
+      "email": "tashgdrg",
+      "id": 7
+    }
+  ],
+  "register": [
+    {
+      "fName": "nagaraju",
+      "lName": "thota",
+      "email": "naga@gmail.com",
+      "pwd": "naga@123",
+      "conPwd": "naga@123",
+      "mobile": "9874563210",
+      "id": 1
+    },
+    {
+      "fName": "Raju",
+      "lName": "Thota",
+      "mobile": "9705081432",
+      "email": "raju@gmail.com",
+      "pwd": "Raju@123",
+      "conPwd": "Raju@123",
+      "term": true,
+      "id": 2
+    }
+  ],
+  "AP": [
+    {
+      "1": "Ongole",
+      "2": "Vijayawada",
+      "3": "Gudivada",
+      "4": "Guntur",
+      "5": "Bapatla"
+    }
+  ],
+  "TS": [
+    {
+      "1": "Hyderabad",
+      "2": "Nizambad",
+      "3": "Kurnool",
+      "4": "Medak"
+    }
+  ],
+  "CHE": [
+    {
+      "1": "Avadi",
+      "2": "Tiruvottiyur",
+      "3": "Pallavaram",
+      "4": "Tambaram"
+    }
+  ]
+}

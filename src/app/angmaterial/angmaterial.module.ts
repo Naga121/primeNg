@@ -36,7 +36,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
-import { MatFormFieldControl, MatFormFieldModule } from '@angular/material/form-field';
+import {MatFormFieldControl, MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   imports:[
@@ -78,7 +78,7 @@ import { MatFormFieldControl, MatFormFieldModule } from '@angular/material/form-
     MatTreeModule,
     MatFormFieldModule,
     
-    
+
   
   ],
   exports: [
@@ -119,9 +119,7 @@ import { MatFormFieldControl, MatFormFieldModule } from '@angular/material/form-
     MatTooltipModule,
     MatTreeModule,
     MatFormFieldModule,
-   
- 
+    
   ]
 })
-
 export class AngmaterialModule { }

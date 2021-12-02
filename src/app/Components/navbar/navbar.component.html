@@ -1,7 +1,7 @@
 <!-- Navabar -->
-<nav class="navbar navbar-expand-sm navbar-light bg-light">
+<nav class="navbar navbar-expand-sm navbar-peimary bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">YariBus</a>
       <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon "></span>
       </button>
@@ -17,10 +17,34 @@
             <a class="nav-link text-light"  href="#">Contact</a>
           </li>
           <li class="nav-item">
-            <button pButton type="button" icon="pi pi-times" class="p-button-rounded p-button-danger    "></button>
+            <button pButton type="button" icon="pi pi-times" class="p-button-rounded p-button-danger    " routerLink="/login"></button>
           </li>
         </ul>
       </div>
     </div>
 </nav>
+<!--
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav  #drawer class="sidenav" mode="side" [opened]="opened">
+    <mat-toolbar>
+      <div>
+        <mat-icon id="face">face</mat-icon>
+        <h5 *ngIf="!user">Hello!</h5>
+        <h5 *ngIf="user">{{data| uppercase|slice:0:1 }}</h5>
+      </div>
+    </mat-toolbar>
+    <mat-nav-list>
+      <a href="#">Hello</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>Admin</span>
+      <span class="spacer"></span>
 
+    </mat-toolbar>
+  </mat-sidenav-content>
+</mat-sidenav-container> -->
