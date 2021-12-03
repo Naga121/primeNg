@@ -1,50 +1,32 @@
 <!-- Navabar -->
-<nav class="navbar navbar-expand-sm navbar-peimary bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">YariBus</a>
-      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon "></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link text-light"  href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light"  href="#">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light"  href="#">Contact</a>
-          </li>
-          <li class="nav-item">
-            <button pButton type="button" icon="pi pi-times" class="p-button-rounded p-button-danger    " routerLink="/login"></button>
-          </li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-sm navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand text-light fs-2 mx-5" href="#">Yaribus</a>
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon "></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto h6 mb-2 mb-lg-0">
+        <li class="nav-item ">
+          <a class="nav-link text-light " href="#">Offers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">Get Free Rides</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class=" nav-link text-light dropdown-toggle " type="button" id="mybookdropdown" data-bs-toggle="dropdown"
+            aria-expanded="false">My Bookings</a>
+          <ul class="dropdown-menu" aria-labelledby="mybookdropdown">
+            <li><a class="dropdown-item" href="#">Print Booking</a></li>
+            <li><a class="dropdown-item" href="#">Cancel Booking</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link dropdown-toggle text-light" href="#"><i class="pi pi-user" style="font-size: 1.2rem"></i>Login / Register</a>
+        </li>
+      </ul>
     </div>
+  </div>
 </nav>
-<!--
-<mat-sidenav-container class="sidenav-container">
-  <mat-sidenav  #drawer class="sidenav" mode="side" [opened]="opened">
-    <mat-toolbar>
-      <div>
-        <mat-icon id="face">face</mat-icon>
-        <h5 *ngIf="!user">Hello!</h5>
-        <h5 *ngIf="user">{{data| uppercase|slice:0:1 }}</h5>
-      </div>
-    </mat-toolbar>
-    <mat-nav-list>
-      <a href="#">Hello</a>
-    </mat-nav-list>
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <mat-toolbar color="primary">
-      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-      </button>
-      <span>Admin</span>
-      <span class="spacer"></span>
-
-    </mat-toolbar>
-  </mat-sidenav-content>
-</mat-sidenav-container> -->
