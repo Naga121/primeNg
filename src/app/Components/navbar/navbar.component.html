@@ -1,5 +1,5 @@
 <!-- Navabar -->
-<nav class="navbar navbar-expand-sm navbar-light">
+<nav class="navbar navbar-expand-sm navbar-light sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand text-light fs-2 mx-5" href="#">Yaribus</a>
     <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
@@ -24,9 +24,10 @@
           </ul>
         </li>
         <li class="nav-item">
-        <a class="nav-link dropdown-toggle text-light" href="#"><i class="pi pi-user" style="font-size: 1.2rem"></i>Login / Register</a>
+          <a class="nav-link dropdown-toggle text-light text-center" routerLink="/login"><i class="pi pi-user" style="font-size: 1.2rem"></i>Login / Register</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+<app-home></app-home>

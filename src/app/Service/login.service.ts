@@ -13,8 +13,6 @@ export class LoginService {
   private loginUrl="http://localhost:3000/register";
 
   constructor(private http:HttpClient) { }
-
-
   // Registatin_Method
   postReg(obj:Employee[]):Observable<Employee[]>{
     return this.http.post<Employee[]>(this.loginUrl,obj).pipe(

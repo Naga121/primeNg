@@ -14,6 +14,7 @@ import { RegisterComponent } from './Components/register/register.component';
 import { ToastrModule } from 'ngx-toastr';
 import { LoginService } from './Service/login.service';
 import { CustomValidatorService } from './Service/custom-validator.service';
+import { HomeComponent } from './Components/home/home.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { CustomValidatorService } from './Service/custom-validator.service';
     NavbarComponent,
     LoginComponent,
     RegisterComponent,
+    HomeComponent,
 
   ],
   imports: [
